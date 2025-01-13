@@ -22,7 +22,13 @@
             <a href="#leadership">Leadership</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    
 
     <!-- About Section -->
     <section class="main" id="about">
@@ -324,5 +330,16 @@
         </div>
     </footer>
 
+    <script>
+        // Navbar toggle functionality
+const hamburger = document.querySelector('.hamburger');
+const navigation = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navigation.classList.toggle('active');
+});
+
+    </script>
 </body>
 </html>
